@@ -25,10 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(!$x4)xyxl&7c%u1eew(fkb9+__fgb2xh#+d_r4o@yyqo)p5q5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
+DEBUG = True
 ALLOWED_HOSTS = ['information-portal.herokuapp.com', '127.0.0.1:8000']
-
+CSRF_TRUSTED_ORIGINS = ['information-portal.herokuapp.com', '127.0.0.1:8000']
 
 # Application definition
 
