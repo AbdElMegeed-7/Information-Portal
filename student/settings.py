@@ -26,8 +26,10 @@ SECRET_KEY = '(!$x4)xyxl&7c%u1eew(fkb9+__fgb2xh#+d_r4o@yyqo)p5q5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['https://information-portal.herokuapp.com', 'https://127.0.0.1:8000']
-CSRF_TRUSTED_ORIGINS = ['https://information-portal.herokuapp.com', 'https://127.0.0.1:8000']
+ALLOWED_HOSTS = ['https://information-portal.herokuapp.com',
+                 'https://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = [
+    'https://information-portal.herokuapp.com', 'https://127.0.0.1:8000']
 
 # Application definition
 
@@ -41,6 +43,9 @@ INSTALLED_APPS = [
 
     'dashboard.apps.DashboardConfig',
     'crispy_forms',
+
+    # matching quiry
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
